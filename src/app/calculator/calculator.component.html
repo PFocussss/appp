@@ -1,0 +1,12 @@
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,100&display=swap');
+    </style>
+<div>
+    <label for="score" class="header">โปรดกรอกคะแนน : </label>
+    <input class="input" type="number" id="score" [(ngModel)]="score"> 
+    <button (click)="calculateGrade()"> คำนวณเกรด </button>
+     <br> <br> <br> 
+    <h4 *ngIf="gradeResult">เกรดของคุณคือ : Grade {{ gradeResult }}</h4> <!--//ngIf ใช้ซ่อน element บน DOM-->
+  </div>
+</body>
